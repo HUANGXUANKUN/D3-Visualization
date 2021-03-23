@@ -192,7 +192,7 @@ async function drawHeatMap() {
         console.log(d);
         //d3.select(this).attr("fill","#655091");
         d3.select(this).style("stroke", "orange").style("stroke-width", "3px");
-        d3.select(".trianglepointer")
+        d3.select(".trianglepointer2")
           .transition()
           .delay(100)
           .attr(
@@ -206,7 +206,7 @@ async function drawHeatMap() {
               ",0)"
           );
 
-        d3.select(".LegText")
+        d3.select(".LegText2")
           .select("text")
           .text(
             colorLText[
@@ -281,7 +281,7 @@ async function drawHeatMap() {
       .append("g")
       .attr("transform", "rotate(180)")
       .append("g")
-      .attr("class", "trianglepointer")
+      .attr("class", "trianglepointer2")
       .attr(
         "transform",
         "translate(" + -lPatchWidth / colorScale.range().length / 2 + ")"
@@ -310,7 +310,7 @@ async function drawHeatMap() {
     // legend text
     legends
       .append("g")
-      .attr("class", "LegText")
+      .attr("class", "LegText2")
       .attr("transform", "translate(0,45)")
       .append("text")
       .attr("x", lPatchWidth / 2)

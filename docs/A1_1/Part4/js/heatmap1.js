@@ -192,7 +192,7 @@ async function drawHeatMap() {
         console.log(d);
         //d3.select(this).attr("fill","#655091");
         d3.select(this).style("stroke", "orange").style("stroke-width", "3px");
-        d3.select(".trianglepointer")
+        d3.select(".trianglepointer1")
           .transition()
           .delay(100)
           .attr(
@@ -281,7 +281,7 @@ async function drawHeatMap() {
       .append("g")
       .attr("transform", "rotate(180)")
       .append("g")
-      .attr("class", "trianglepointer")
+      .attr("class", "trianglepointer1")
       .attr(
         "transform",
         "translate(" + -lPatchWidth / colorScale.range().length / 2 + ")"
