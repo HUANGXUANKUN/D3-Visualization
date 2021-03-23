@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./css/styles.css"></link>
+        <title>Maximum rainfall in a day</title>
+    </head>
+    <body>
+        <div id="wrapper" class="wrapper">
+            <div id="tooltip" class="tooltip">
+                <div class="tooltip-date">
+                    <span id="date"></span>
+                </div>
+                <div class="tooltip-temperature">
+                    Total rainfall: <span id="tooltip-total"></span> mm <br/>
+                    Maximum rainfall in a day: <span id="tooltip-maximum"></span> mm<br/>
+                    Rainfall days: <span id="tooltip-days"></span> days
+                </div>
+            </div>
+        </div>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="./js/line.js"></script>
+    </body>
+</html>

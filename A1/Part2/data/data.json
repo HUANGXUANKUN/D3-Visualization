@@ -1,0 +1,800 @@
+[
+  {
+    "MaximumDailyRainfall": 24.5,
+    "Date": "2010-01",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 69.5
+  },
+  {
+    "MaximumDailyRainfall": 2.9,
+    "Date": "2010-02",
+    "NumberOfRainfallDay": 4,
+    "TotalRainfallInMonth": 6.3
+  },
+  {
+    "MaximumDailyRainfall": 57.6,
+    "Date": "2010-03",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 238
+  },
+  {
+    "MaximumDailyRainfall": 40,
+    "Date": "2010-04",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 158.5
+  },
+  {
+    "MaximumDailyRainfall": 90.5,
+    "Date": "2010-05",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 157.5
+  },
+  {
+    "MaximumDailyRainfall": 43,
+    "Date": "2010-06",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 240.5
+  },
+  {
+    "MaximumDailyRainfall": 121.1,
+    "Date": "2010-07",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 298.5
+  },
+  {
+    "MaximumDailyRainfall": 60.2,
+    "Date": "2010-08",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 158.4
+  },
+  {
+    "MaximumDailyRainfall": 28,
+    "Date": "2010-09",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 121.5
+  },
+  {
+    "MaximumDailyRainfall": 58.1,
+    "Date": "2010-10",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 166.2
+  },
+  {
+    "MaximumDailyRainfall": 41.6,
+    "Date": "2010-11",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 278.8
+  },
+  {
+    "MaximumDailyRainfall": 85.8,
+    "Date": "2010-12",
+    "NumberOfRainfallDay": 14,
+    "TotalRainfallInMonth": 181.4
+  },
+  {
+    "MaximumDailyRainfall": 216.2,
+    "Date": "2011-01",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 513.2
+  },
+  {
+    "MaximumDailyRainfall": 17.4,
+    "Date": "2011-02",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 23
+  },
+  {
+    "MaximumDailyRainfall": 54,
+    "Date": "2011-03",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 256.6
+  },
+  {
+    "MaximumDailyRainfall": 61.8,
+    "Date": "2011-04",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 217.8
+  },
+  {
+    "MaximumDailyRainfall": 34.2,
+    "Date": "2011-05",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 127
+  },
+  {
+    "MaximumDailyRainfall": 82,
+    "Date": "2011-06",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 213
+  },
+  {
+    "MaximumDailyRainfall": 30,
+    "Date": "2011-07",
+    "NumberOfRainfallDay": 7,
+    "TotalRainfallInMonth": 76.6
+  },
+  {
+    "MaximumDailyRainfall": 30.2,
+    "Date": "2011-08",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 81.4
+  },
+  {
+    "MaximumDailyRainfall": 40.4,
+    "Date": "2011-09",
+    "NumberOfRainfallDay": 14,
+    "TotalRainfallInMonth": 136.4
+  },
+  {
+    "MaximumDailyRainfall": 54,
+    "Date": "2011-10",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 216.8
+  },
+  {
+    "MaximumDailyRainfall": 78.6,
+    "Date": "2011-11",
+    "NumberOfRainfallDay": 24,
+    "TotalRainfallInMonth": 377.8
+  },
+  {
+    "MaximumDailyRainfall": 87.4,
+    "Date": "2011-12",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 284.6
+  },
+  {
+    "MaximumDailyRainfall": 26.2,
+    "Date": "2012-01",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 106.1
+  },
+  {
+    "MaximumDailyRainfall": 38.4,
+    "Date": "2012-02",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 83.6
+  },
+  {
+    "MaximumDailyRainfall": 92.3,
+    "Date": "2012-03",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 313.4
+  },
+  {
+    "MaximumDailyRainfall": 48.4,
+    "Date": "2012-04",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 260.6
+  },
+  {
+    "MaximumDailyRainfall": 79.2,
+    "Date": "2012-05",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 292
+  },
+  {
+    "MaximumDailyRainfall": 38.2,
+    "Date": "2012-06",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 53
+  },
+  {
+    "MaximumDailyRainfall": 35.4,
+    "Date": "2012-07",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 130.8
+  },
+  {
+    "MaximumDailyRainfall": 31,
+    "Date": "2012-08",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 119
+  },
+  {
+    "MaximumDailyRainfall": 35.8,
+    "Date": "2012-09",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 107.6
+  },
+  {
+    "MaximumDailyRainfall": 22.6,
+    "Date": "2012-10",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 122.2
+  },
+  {
+    "MaximumDailyRainfall": 49.2,
+    "Date": "2012-11",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 208.2
+  },
+  {
+    "MaximumDailyRainfall": 78.8,
+    "Date": "2012-12",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 363.4
+  },
+  {
+    "MaximumDailyRainfall": 73,
+    "Date": "2013-01",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 262
+  },
+  {
+    "MaximumDailyRainfall": 95.2,
+    "Date": "2013-02",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 395.2
+  },
+  {
+    "MaximumDailyRainfall": 29.6,
+    "Date": "2013-03",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 85.8
+  },
+  {
+    "MaximumDailyRainfall": 41.6,
+    "Date": "2013-04",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 159.4
+  },
+  {
+    "MaximumDailyRainfall": 46.2,
+    "Date": "2013-05",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 211.4
+  },
+  {
+    "MaximumDailyRainfall": 22.4,
+    "Date": "2013-06",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 111.4
+  },
+  {
+    "MaximumDailyRainfall": 37.4,
+    "Date": "2013-07",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 174.6
+  },
+  {
+    "MaximumDailyRainfall": 43.2,
+    "Date": "2013-08",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 165.6
+  },
+  {
+    "MaximumDailyRainfall": 52.6,
+    "Date": "2013-09",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 257
+  },
+  {
+    "MaximumDailyRainfall": 139.8,
+    "Date": "2013-10",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 285.4
+  },
+  {
+    "MaximumDailyRainfall": 44,
+    "Date": "2013-11",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 292.4
+  },
+  {
+    "MaximumDailyRainfall": 119.8,
+    "Date": "2013-12",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 348.2
+  },
+  {
+    "MaximumDailyRainfall": 31.2,
+    "Date": "2014-01",
+    "NumberOfRainfallDay": 5,
+    "TotalRainfallInMonth": 75.4
+  },
+  {
+    "MaximumDailyRainfall": 0.2,
+    "Date": "2014-02",
+    "NumberOfRainfallDay": 1,
+    "TotalRainfallInMonth": 0.2
+  },
+  {
+    "MaximumDailyRainfall": 52.6,
+    "Date": "2014-03",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 66
+  },
+  {
+    "MaximumDailyRainfall": 28.8,
+    "Date": "2014-04",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 110
+  },
+  {
+    "MaximumDailyRainfall": 22.2,
+    "Date": "2014-05",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 125.8
+  },
+  {
+    "MaximumDailyRainfall": 18.8,
+    "Date": "2014-06",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 71.4
+  },
+  {
+    "MaximumDailyRainfall": 29,
+    "Date": "2014-07",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 148.6
+  },
+  {
+    "MaximumDailyRainfall": 44.2,
+    "Date": "2014-08",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 241
+  },
+  {
+    "MaximumDailyRainfall": 34.6,
+    "Date": "2014-09",
+    "NumberOfRainfallDay": 9,
+    "TotalRainfallInMonth": 83.6
+  },
+  {
+    "MaximumDailyRainfall": 32.8,
+    "Date": "2014-10",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 120
+  },
+  {
+    "MaximumDailyRainfall": 64.4,
+    "Date": "2014-11",
+    "NumberOfRainfallDay": 23,
+    "TotalRainfallInMonth": 250.8
+  },
+  {
+    "MaximumDailyRainfall": 48.2,
+    "Date": "2014-12",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 245.6
+  },
+  {
+    "MaximumDailyRainfall": 33.6,
+    "Date": "2015-01",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 79.6
+  },
+  {
+    "MaximumDailyRainfall": 10.8,
+    "Date": "2015-02",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 18.8
+  },
+  {
+    "MaximumDailyRainfall": 46,
+    "Date": "2015-03",
+    "NumberOfRainfallDay": 5,
+    "TotalRainfallInMonth": 84.4
+  },
+  {
+    "MaximumDailyRainfall": 18.8,
+    "Date": "2015-04",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 73.2
+  },
+  {
+    "MaximumDailyRainfall": 22.2,
+    "Date": "2015-05",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 89
+  },
+  {
+    "MaximumDailyRainfall": 28.4,
+    "Date": "2015-06",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 95.8
+  },
+  {
+    "MaximumDailyRainfall": 45.8,
+    "Date": "2015-07",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 116.8
+  },
+  {
+    "MaximumDailyRainfall": 63.2,
+    "Date": "2015-08",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 185.8
+  },
+  {
+    "MaximumDailyRainfall": 18.4,
+    "Date": "2015-09",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 61.6
+  },
+  {
+    "MaximumDailyRainfall": 28.6,
+    "Date": "2015-10",
+    "NumberOfRainfallDay": 9,
+    "TotalRainfallInMonth": 87.2
+  },
+  {
+    "MaximumDailyRainfall": 25.8,
+    "Date": "2015-11",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 72.6
+  },
+  {
+    "MaximumDailyRainfall": 40.4,
+    "Date": "2015-12",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 302.3
+  },
+  {
+    "MaximumDailyRainfall": 39.6,
+    "Date": "2016-01",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 126.6
+  },
+  {
+    "MaximumDailyRainfall": 71.8,
+    "Date": "2016-02",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 186
+  },
+  {
+    "MaximumDailyRainfall": 2.4,
+    "Date": "2016-03",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 6.2
+  },
+  {
+    "MaximumDailyRainfall": 18.2,
+    "Date": "2016-04",
+    "NumberOfRainfallDay": 14,
+    "TotalRainfallInMonth": 89.8
+  },
+  {
+    "MaximumDailyRainfall": 54.8,
+    "Date": "2016-05",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 193.8
+  },
+  {
+    "MaximumDailyRainfall": 67.8,
+    "Date": "2016-06",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 162.8
+  },
+  {
+    "MaximumDailyRainfall": 59.4,
+    "Date": "2016-07",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 168.6
+  },
+  {
+    "MaximumDailyRainfall": 30.6,
+    "Date": "2016-08",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 139.2
+  },
+  {
+    "MaximumDailyRainfall": 34,
+    "Date": "2016-09",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 118.9
+  },
+  {
+    "MaximumDailyRainfall": 75.4,
+    "Date": "2016-10",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 181
+  },
+  {
+    "MaximumDailyRainfall": 65.6,
+    "Date": "2016-11",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 290.2
+  },
+  {
+    "MaximumDailyRainfall": 73,
+    "Date": "2016-12",
+    "NumberOfRainfallDay": 23,
+    "TotalRainfallInMonth": 292.6
+  },
+  {
+    "MaximumDailyRainfall": 60.6,
+    "Date": "2017-01",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 197.6
+  },
+  {
+    "MaximumDailyRainfall": 31,
+    "Date": "2017-02",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 158.4
+  },
+  {
+    "MaximumDailyRainfall": 30.2,
+    "Date": "2017-03",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 136.2
+  },
+  {
+    "MaximumDailyRainfall": 42.8,
+    "Date": "2017-04",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 208.6
+  },
+  {
+    "MaximumDailyRainfall": 44.8,
+    "Date": "2017-05",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 190
+  },
+  {
+    "MaximumDailyRainfall": 29.6,
+    "Date": "2017-06",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 106
+  },
+  {
+    "MaximumDailyRainfall": 30.2,
+    "Date": "2017-07",
+    "NumberOfRainfallDay": 9,
+    "TotalRainfallInMonth": 79.6
+  },
+  {
+    "MaximumDailyRainfall": 29.4,
+    "Date": "2017-08",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 84.2
+  },
+  {
+    "MaximumDailyRainfall": 20.2,
+    "Date": "2017-09",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 124.4
+  },
+  {
+    "MaximumDailyRainfall": 31.2,
+    "Date": "2017-10",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 120.8
+  },
+  {
+    "MaximumDailyRainfall": 45.2,
+    "Date": "2017-11",
+    "NumberOfRainfallDay": 24,
+    "TotalRainfallInMonth": 268.6
+  },
+  {
+    "MaximumDailyRainfall": 69.8,
+    "Date": "2017-12",
+    "NumberOfRainfallDay": 23,
+    "TotalRainfallInMonth": 371.2
+  },
+  {
+    "MaximumDailyRainfall": 45.8,
+    "Date": "2018-01",
+    "NumberOfRainfallDay": 25,
+    "TotalRainfallInMonth": 287
+  },
+  {
+    "MaximumDailyRainfall": 13,
+    "Date": "2018-02",
+    "NumberOfRainfallDay": 5,
+    "TotalRainfallInMonth": 14.8
+  },
+  {
+    "MaximumDailyRainfall": 15.2,
+    "Date": "2018-03",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 44.6
+  },
+  {
+    "MaximumDailyRainfall": 14,
+    "Date": "2018-04",
+    "NumberOfRainfallDay": 14,
+    "TotalRainfallInMonth": 61.2
+  },
+  {
+    "MaximumDailyRainfall": 47.4,
+    "Date": "2018-05",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 132.2
+  },
+  {
+    "MaximumDailyRainfall": 46.8,
+    "Date": "2018-06",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 182.6
+  },
+  {
+    "MaximumDailyRainfall": 32.4,
+    "Date": "2018-07",
+    "NumberOfRainfallDay": 10,
+    "TotalRainfallInMonth": 143.2
+  },
+  {
+    "MaximumDailyRainfall": 34.6,
+    "Date": "2018-08",
+    "NumberOfRainfallDay": 11,
+    "TotalRainfallInMonth": 121.6
+  },
+  {
+    "MaximumDailyRainfall": 45,
+    "Date": "2018-09",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 144.4
+  },
+  {
+    "MaximumDailyRainfall": 60.6,
+    "Date": "2018-10",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 234.4
+  },
+  {
+    "MaximumDailyRainfall": 20.6,
+    "Date": "2018-11",
+    "NumberOfRainfallDay": 27,
+    "TotalRainfallInMonth": 169.6
+  },
+  {
+    "MaximumDailyRainfall": 43.8,
+    "Date": "2018-12",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 172.6
+  },
+  {
+    "MaximumDailyRainfall": 38.2,
+    "Date": "2019-01",
+    "NumberOfRainfallDay": 9,
+    "TotalRainfallInMonth": 63.6
+  },
+  {
+    "MaximumDailyRainfall": 13.4,
+    "Date": "2019-02",
+    "NumberOfRainfallDay": 5,
+    "TotalRainfallInMonth": 31.6
+  },
+  {
+    "MaximumDailyRainfall": 29,
+    "Date": "2019-03",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 72.2
+  },
+  {
+    "MaximumDailyRainfall": 52.4,
+    "Date": "2019-04",
+    "NumberOfRainfallDay": 9,
+    "TotalRainfallInMonth": 174.8
+  },
+  {
+    "MaximumDailyRainfall": 17.2,
+    "Date": "2019-05",
+    "NumberOfRainfallDay": 13,
+    "TotalRainfallInMonth": 69
+  },
+  {
+    "MaximumDailyRainfall": 37.6,
+    "Date": "2019-06",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 173.8
+  },
+  {
+    "MaximumDailyRainfall": 6.6,
+    "Date": "2019-07",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 12.2
+  },
+  {
+    "MaximumDailyRainfall": 3.8,
+    "Date": "2019-08",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 11.8
+  },
+  {
+    "MaximumDailyRainfall": 16.4,
+    "Date": "2019-09",
+    "NumberOfRainfallDay": 4,
+    "TotalRainfallInMonth": 22.8
+  },
+  {
+    "MaximumDailyRainfall": 92.2,
+    "Date": "2019-10",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 176.8
+  },
+  {
+    "MaximumDailyRainfall": 73.4,
+    "Date": "2019-11",
+    "NumberOfRainfallDay": 15,
+    "TotalRainfallInMonth": 137.4
+  },
+  {
+    "MaximumDailyRainfall": 74.2,
+    "Date": "2019-12",
+    "NumberOfRainfallDay": 14,
+    "TotalRainfallInMonth": 421.5
+  },
+  {
+    "MaximumDailyRainfall": 38,
+    "Date": "2020-01",
+    "NumberOfRainfallDay": 6,
+    "TotalRainfallInMonth": 88.4
+  },
+  {
+    "MaximumDailyRainfall": 23.8,
+    "Date": "2020-02",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 65
+  },
+  {
+    "MaximumDailyRainfall": 47.4,
+    "Date": "2020-03",
+    "NumberOfRainfallDay": 8,
+    "TotalRainfallInMonth": 108.8
+  },
+  {
+    "MaximumDailyRainfall": 51.8,
+    "Date": "2020-04",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 188
+  },
+  {
+    "MaximumDailyRainfall": 53.8,
+    "Date": "2020-05",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 255.6
+  },
+  {
+    "MaximumDailyRainfall": 41,
+    "Date": "2020-06",
+    "NumberOfRainfallDay": 21,
+    "TotalRainfallInMonth": 233.8
+  },
+  {
+    "MaximumDailyRainfall": 30.4,
+    "Date": "2020-07",
+    "NumberOfRainfallDay": 22,
+    "TotalRainfallInMonth": 140.8
+  },
+  {
+    "MaximumDailyRainfall": 34.6,
+    "Date": "2020-08",
+    "NumberOfRainfallDay": 12,
+    "TotalRainfallInMonth": 103.4
+  },
+  {
+    "MaximumDailyRainfall": 32.8,
+    "Date": "2020-09",
+    "NumberOfRainfallDay": 18,
+    "TotalRainfallInMonth": 150.2
+  },
+  {
+    "MaximumDailyRainfall": 19,
+    "Date": "2020-10",
+    "NumberOfRainfallDay": 16,
+    "TotalRainfallInMonth": 78.8
+  },
+  {
+    "MaximumDailyRainfall": 64.2,
+    "Date": "2020-11",
+    "NumberOfRainfallDay": 19,
+    "TotalRainfallInMonth": 220.6
+  },
+  {
+    "MaximumDailyRainfall": 58.2,
+    "Date": "2020-12",
+    "NumberOfRainfallDay": 20,
+    "TotalRainfallInMonth": 253.2
+  },
+  {
+    "MaximumDailyRainfall": 210.6,
+    "Date": "2021-01",
+    "NumberOfRainfallDay": 17,
+    "TotalRainfallInMonth": 692.8
+  }
+]

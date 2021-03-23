@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    .title body {
+      margin: auto;
+      width: 885px;
+      font: 10px arial;
+      padding: 25px;
+    }
+    .y-axis line {
+      opacity: 0.2;
+    }
+    .y-axis path {
+      display: none;
+    }
+    .line {
+      fill: none;
+      stroke-width: 1.5px;
+      opacity: 0.75;
+    }
+    .overlay {
+      fill: none;
+      pointer-events: all;
+    }
+    .lineHoverText {
+      text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+    }
+    .hoverCircle {
+      opacity: 0.75;
+    }
+    H1 {
+      /* text-align: center; */
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="wood">Rainfall Comparison: 2018 vs 2019 vs 2020</h1>
+  <div style="font-size: 18px">Select metric:</div>
+  <select id="selectbox">
+    <option selected value="Total Rainfall In Month">
+      Total Rainfall Per Month (mm)
+    </option>
+    <option value="Maximum Daily Rainfall">Maximum Daily Rainfall (mm)</option>
+    <option value="Number Of Rainfall Day">Number Of Rainfall Day</option>
+  </select>
+
+  <br/>
+
+  <svg id="chart" width="850" height="410"></svg>
+
+  <script src="./js/chart.js"></script>
+</body>
