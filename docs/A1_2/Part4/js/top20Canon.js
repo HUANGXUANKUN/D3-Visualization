@@ -1,6 +1,5 @@
 async function top20Canon() {
 
-
   var svg = d3.select("#top20Canon-container").append("svg")
     .attr('height', 500)
     .attr('width', 1000);

@@ -22,8 +22,7 @@ async function drawHeatMap() {
     cellSize = itemSize - 3,
     margin = { top: 50, right: 20, bottom: 50, left: 110 };
 
-  var heading = ("Singapore Monthly Rainfall(mm) 1982 - 2021");
-  var value_csv_title = "TotalRainfallInMonth";
+  var value_csv_title = "NumberOfRainfallDay";
   
 
   width = window.innerWidth * 0.9 - margin.right - margin.left,
@@ -146,7 +145,7 @@ async function drawHeatMap() {
       .range(colorHold);
 
     var rootsvg = d3
-      .select("#heatmap")
+      .select("#heatmap2")
       .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom);
@@ -230,7 +229,7 @@ async function drawHeatMap() {
         tooltip
           .select("div")
           .html(
-            "<strong>" + d.month + " " + d.year  + "</strong><br/> " + " Monthly rainfall: " + (+d.value).toFixed(2) + " mm"
+            "<strong>" + d.month + " " + d.year  + "</strong><br/> " + " Rainy Days: " + (+d.value) + " days"
           );
       });
 
@@ -329,7 +328,7 @@ async function drawHeatMap() {
       .attr("font-size", "22px")
       .attr("font-family", "Segoe UI bold")
       .style("text-anchor", "middle")
-      .text("Singapore Monthly Rainfall(mm) 1982 - 2021");
+      .text("Singapore Monthly Rain Days 1982 - 2021");
   });
 }
 drawHeatMap();

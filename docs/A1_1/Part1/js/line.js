@@ -23,14 +23,15 @@ async function drawLineChart() {
 
   let dimensions = {
     width: window.innerWidth * 0.9,
-    height: 400,
+    height: 250,
     margin: {
       top: 30,
       right: 15,
-      bottom: 40,
+      bottom: 50,
       left: 60,
     },
   };
+
   dimensions.boundedWidth =
     dimensions.width - dimensions.margin.left - dimensions.margin.right;
   dimensions.boundedHeight =

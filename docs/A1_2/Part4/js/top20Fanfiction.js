@@ -78,7 +78,7 @@ async function top20Canon() {
       .attr("stroke", "black")
       .attr("stroke-width", ".8")
       .text("frequency");
-
+      
     g.selectAll(".bar")
       .data(data)
       .enter().append("rect")

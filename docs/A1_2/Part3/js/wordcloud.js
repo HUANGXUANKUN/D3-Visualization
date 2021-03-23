@@ -1,7 +1,7 @@
 function WordCloud(options) {
-  var margin = {top: 70, right: 100, bottom: 0, left: 100},
+  var margin = {top: 20, right: 100, bottom: 20, left: 100},
            w = 1200 - margin.left - margin.right,
-           h = 400 - margin.top - margin.bottom;
+           h = 300 - margin.top - margin.bottom;
 
   // create the svg
   var svg = d3.select(options.container).append("svg")
@@ -14,9 +14,16 @@ function WordCloud(options) {
   var focus = svg.append('g')
                  .attr("transform", "translate(" + [w/2, h/2+margin.top] + ")")
 
-  var colorMap = ['red', '#a38b07'];
+  var colorMap = ['red', 
+  '#a38b07',
+  'green',
+  'blue',
+  'purple',
+  'orange',
+];
 
-  var arng = new alea('hello.');
+
+  var arng = new alea('randomSeed');
 
   var data;
   d3.json(options.data, function(error, d) {
@@ -35,6 +42,7 @@ function WordCloud(options) {
                .text(function(d) { return d.key; })
                .font("Impact")
                .random(arng)
+               .rotate(0) 
                .on("end", function(output) {
                  if (word_entries.length !== output.length) {
                    console.log("not all words included- recreating");
@@ -44,7 +52,6 @@ function WordCloud(options) {
                })
                .start();
     }
-
     d3.layout.cloud().stop();
 
   });
@@ -55,10 +62,13 @@ function WordCloud(options) {
          .enter().append("text")
          .style("font-size", function(d) { return xScale(d.value) + "px"; })
          .style("font-family", "Impact")
-         .style("fill", function(d, i) { return colorMap[~~(arng() *2)]; })
+         .style("fill", function(d, i) { return d3.schemeCategory10[~~(arng() *10)]; })
+        //  .style("fill", function(d, i) { return colorMap[~~(arng() *2)]; })
+
          .attr("text-anchor", "middle")
          .attr("transform", function(d) {
            return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+
          })
          .text(function(d) { return d.key; })
   }
