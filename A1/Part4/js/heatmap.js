@@ -18,14 +18,16 @@ function findMean(arr) {
 
 async function drawHeatMap() {
   var lPatchWidth = 200;
-  var itemSize = 40,
+  var itemSize = 30,
     cellSize = itemSize - 3,
-    margin = { top: 50, right: 20, bottom: 120, left: 110 };
+    margin = { top: 50, right: 20, bottom: 50, left: 110 };
 
-  var data;
+  var heading = ("Singapore Monthly Rainfall(mm) 1982 - 2021");
+  var value_csv_title = "TotalRainfallInMonth";
+  
 
   width = window.innerWidth * 0.9 - margin.right - margin.left,
-    height = 800 - margin.top - margin.bottom;
+  height = 550 - margin.top - margin.bottom;
 
   var colorScale;
 
@@ -60,13 +62,15 @@ async function drawHeatMap() {
 
   d3.csv("./data/data.csv", function (rawData) {
     const dateParser = d3.timeParse("%Y-%m");
-
+    console.log((height + margin.bottom - 35 - 20))
+    var data;
     data = rawData.map(function (item) {
       var newItem = {};
       var date = dateParser(item.Date);
+      newItem.date = date;
       newItem.year = date.getYear() + 1900;
-      newItem.month = date.getMonth() + 1;
-      newItem.value = item.TotalRainfallInMonth;
+      newItem.month = date.toLocaleString('default', { month: 'long' });
+      newItem.value = item[value_csv_title];
       return newItem;
     });
 
@@ -154,7 +158,7 @@ async function drawHeatMap() {
     tooltip = d3
       .select("body")
       .append("div")
-      .style("width", "80px")
+      .style("width", "200px")
       .style("height", "40px")
       .style("background", "#C3B3E5")
       .style("opacity", "1")
@@ -162,6 +166,7 @@ async function drawHeatMap() {
       .style("visibility", "hidden")
       .style("box-shadow", "0px 0px 6px #7861A5")
       .style("padding", "10px");
+
     toolval = tooltip.append("div");
 
     var cells = svg
@@ -225,7 +230,7 @@ async function drawHeatMap() {
         tooltip
           .select("div")
           .html(
-            "<strong>" + d.product + "</strong><br/> " + (+d.value).toFixed(2)
+            "<strong>" + d.month + " " + d.year  + "</strong><br/> " + " Monthly rainfall: " + (+d.value).toFixed(2) + " mm"
           );
       });
 
@@ -254,6 +259,7 @@ async function drawHeatMap() {
       });
 
     // Legends section
+    
 
     legends = svg
       .append("g")
@@ -266,6 +272,8 @@ async function drawHeatMap() {
           (height + margin.bottom - 35 - 20) +
           ")"
       );
+
+      
 
     // Legend traingle pointer generator
     var symbolGenerator = d3.symbol().type(d3.symbolTriangle).size(64);
@@ -281,6 +289,7 @@ async function drawHeatMap() {
       )
       .append("path")
       .attr("d", symbolGenerator());
+      
     //Legend Rectangels
     legends
       .append("g")
@@ -320,7 +329,7 @@ async function drawHeatMap() {
       .attr("font-size", "22px")
       .attr("font-family", "Segoe UI bold")
       .style("text-anchor", "middle")
-      .text("Sales Heatmap");
+      .text("Singapore Monthly Rainfall(mm) 1982 - 2021");
   });
 }
 drawHeatMap();
