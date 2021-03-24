@@ -1,4 +1,4 @@
-async function drawDiagram1() {
+async function drawDiagram2() {
   let dimensions = {
     width: window.innerWidth / 2,
     height: 600,
@@ -10,13 +10,14 @@ async function drawDiagram1() {
     },
   };
 
-  small_node_r = 8;
-  big_node_r = 20;
+  const small_node_r = 8;
+  const big_node_r = 15;
 
-  const wrapper_id_name = "#top5_fan";
-  const top5_id = ["39", "21", "32", "47", "40"];
+  const wrapper_id_name = "#top5_official";
+  const top5_id = ["39", "58", "21", "11", "22"];
   console.log(top5_id);
-  title = "Fan-Fiction Novels";
+  const title = "Official Books";
+
   //   top5_fan_id = ["39", "21", "32", "47", "40"];
   //   top5_official_id = ["39", "58", "21", "11", "22"];
 
@@ -79,7 +80,7 @@ async function drawDiagram1() {
       "collide",
       d3
         .forceCollide(function (d) {
-          return d.r + 20;
+          return d.r + 15;
         })
         .iterations(16)
     )
@@ -115,6 +116,8 @@ async function drawDiagram1() {
   }
 
   function _displayConnections(id) {
+    // _restoreEdges();
+    // _restoreNodes();
 
     var edges = svg.selectAll("line");
 
@@ -150,10 +153,9 @@ async function drawDiagram1() {
   }
 
 
-  d3.json("./data/top5_fan_fiction_char.json", function (error, rawData) {
+  d3.json("./data/top5_official_char.json", function (error, rawData) {
     if (error) throw error;
-
-    console.log("fan-fiction")
+    console.log("official")
     console.log(rawData);
 
     var nodes = rawData["nodes"].map((d) => {
@@ -203,7 +205,7 @@ async function drawDiagram1() {
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide)
       .on("click", function (d) {
-        console.log("clicked on fan chart");
+        console.log("clicked on");
         console.log(d);
         _displayConnections(d.id);
         d3.event.stopPropagation();
@@ -262,4 +264,4 @@ async function drawDiagram1() {
   });
 }
 
-drawDiagram1();
+drawDiagram2();

@@ -1,4 +1,4 @@
-async function drawDiagram2() {
+async function drawDiagram1() {
   let dimensions = {
     width: window.innerWidth / 2,
     height: 600,
@@ -10,14 +10,13 @@ async function drawDiagram2() {
     },
   };
 
-  small_node_r = 8;
-  big_node_r = 20;
+  const small_node_r = 8;
+  const big_node_r = 15;
 
-  const wrapper_id_name = "#top5_official";
-  const top5_id = ["39", "58", "21", "11", "22"];
+  const wrapper_id_name = "#top5_fan";
+  const top5_id = ["39", "21", "32", "47", "40"];
   console.log(top5_id);
-  title = "Official Books";
-
+  const title = "Fan-Fiction Novels";
   //   top5_fan_id = ["39", "21", "32", "47", "40"];
   //   top5_official_id = ["39", "58", "21", "11", "22"];
 
@@ -80,7 +79,7 @@ async function drawDiagram2() {
       "collide",
       d3
         .forceCollide(function (d) {
-          return d.r + 20;
+          return d.r + 15;
         })
         .iterations(16)
     )
@@ -116,9 +115,6 @@ async function drawDiagram2() {
   }
 
   function _displayConnections(id) {
-    // _restoreEdges();
-    // _restoreNodes();
-
     var edges = svg.selectAll("line");
 
     let connectedNodeIds = new Set();
@@ -126,11 +122,10 @@ async function drawDiagram2() {
       var source = d.source.id;
       var target = d.target.id;
       if (source === id || target === id) {
-        connectedNodeIds.add(source)
-        connectedNodeIds.add(target)
+        connectedNodeIds.add(source);
+        connectedNodeIds.add(target);
         return 1;
-      }
-      else return 0.05;
+      } else return 0.05;
     });
 
     edges.transition().style("stroke-width", function (d) {
@@ -142,20 +137,18 @@ async function drawDiagram2() {
     });
 
     var allNodes = svg.selectAll("circle");
-    allNodes.style("opacity", function (node){
-        if (!connectedNodeIds.has(node.id)){
-            return 0.05
-        }
-        return 1;
-    })
-
-
+    allNodes.style("opacity", function (node) {
+      if (!connectedNodeIds.has(node.id)) {
+        return 0.05;
+      }
+      return 1;
+    });
   }
 
-
-  d3.json("./data/top5_official_char.json", function (error, rawData) {
+  d3.json("./data/top5_fan_fiction_char.json", function (error, rawData) {
     if (error) throw error;
-    console.log("official")
+
+    console.log("fan-fiction");
     console.log(rawData);
 
     var nodes = rawData["nodes"].map((d) => {
@@ -190,11 +183,6 @@ async function drawDiagram2() {
         }
       });
 
-    //   .attr("stroke-width", function (d) {
-    //     return 1;
-    //     // return Math.sqrt(d.value);
-    //   });
-
     var node = svg
       .append("g")
       .attr("class", "nodes")
@@ -205,7 +193,7 @@ async function drawDiagram2() {
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide)
       .on("click", function (d) {
-        console.log("clicked on");
+        console.log("clicked on fan chart");
         console.log(d);
         _displayConnections(d.id);
         d3.event.stopPropagation();
@@ -222,8 +210,8 @@ async function drawDiagram2() {
         } else {
           return "#4349bf";
         }
-      })
-      
+      });
+
     var lables = node
       .append("text")
       .text(function (d) {
@@ -261,7 +249,8 @@ async function drawDiagram2() {
         return "translate(" + d.x + "," + d.y + ")";
       });
     }
+     
   });
 }
 
-drawDiagram2();
+drawDiagram1();

@@ -1,40 +1,79 @@
 <html>
-    <head>
-        <title>PotterVerse</title>
-		<head>
-			<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
-			<link rel="stylesheet" href="./css/main.css"></link>
-			<link rel="stylesheet" href="./css/triads.css"></link>
-			<link rel="stylesheet" href="./css/network.css"></link>
-			<title>Harry Potter Network</title>
-		</head>
-		
-    </head>
-    <body id="pottermain">
-        <div class="content">
-			<div class="header">
-				<h1>Top 5 Popular Characters Network</h1>
-			</div>
-			<div class="separator"></div>
-			<div class="description">
-				<p>
-					Explore the relations of top5 popular characters in Harry Potter
-				</p>
-			</div>
-			<div class="separator"></div>
-			<div class="triads"></div>
-			<div class="separator"></div>
-			<div class="network">
-			</div>
-			<div class="bottom-space">
-		    </div>
-        </div>
 
-        <script src="./js/libs/jquery-1.11.0.min.js"></script>
-        <script src="./js/libs/d3.v3.min.js"></script>
-        <script src="./js/libs/d3-tip.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/triads.js"></script>
-        <script src="./js/network.js"></script>
-    </body>
+<head>
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+	
+	<link rel="stylesheet" href="./css/styles.css">
+
+	</link>
+	</link>
+	<title>Harry Potter Top 5 Occurence Character Network</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.box {
+			float: left;
+			width: 40%;
+			padding: 0px;
+		}
+		.box-middle {
+			float: left;
+			width: 8%;
+			padding: 0px;
+		}
+
+		.textBox {
+			float: left;
+			width: 50%;
+			padding: 10px;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		div.tooltip {
+			position: absolute;
+			background-color: white;
+			max-width: 200px;
+			height: auto;
+			padding: 1px;
+			border-style: solid;
+			border-radius: 4px;
+			border-width: 1px;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+			pointer-events: none;
+		}
+	</style>
+</head>
+
+<body id="pottermain">
+	<div class="content">
+		<div class="header">
+			<h2>Top 5 Occurence Characters Network</h1>
+		</div>
+	</div>
+	<div class="clearfix">
+		<div id="top5_fan" class="box">
+		</div>
+		<div id="legend" class="box-middle"></div>
+		<div id="top5_official" class="box">
+		</div>
+	</div>
+
+	
+
+	<script src="./libs/d3-tip.js"></script>
+
+	<script src="./js/top5_fan_chart.js"></script>
+	<script src="./js/top5_official_chart.js"></script>
+	<script src="./js/legend.js"></script>	
+
+</body>
+
 </html>
