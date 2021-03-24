@@ -1,18 +1,71 @@
-<!doctype html>
 <html>
+
 <head>
-    <style>
-        .bar {
-            fill: steelblue;
-        }
-    </style>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-<body>
-<hr>
-<div id="top20Canon-container"></div>
-<script src="./js/top20Canon.js"></script>
-<hr>
-<div id="top20fanfiction-container"></div>
-<script src="./js/top20Fanfiction.js"></script>
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+	
+	<link rel="stylesheet" href="./css/styles.css">
+
+	</link>
+	</link>
+	<title>Harry Potter Top 5 Occurence Character Network</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.box {
+			float: left;
+			width: 50%;
+			padding: 10px;
+		}
+
+		.textBox {
+			float: left;
+			width: 50%;
+			padding: 10px;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		div.tooltip {
+			position: absolute;
+			background-color: white;
+			max-width: 200px;
+			height: auto;
+			padding: 1px;
+			border-style: solid;
+			border-radius: 4px;
+			border-width: 1px;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+			pointer-events: none;
+		}
+	</style>
+</head>
+
+<body id="pottermain">
+	<div class="content">
+		<div class="header">
+			<h2>Top 5 Occurence Characters Network</h1>
+		</div>
+	</div>
+	<div class="clearfix">
+		<div id="top5_fan" class="box">
+		</div>
+		<div id="top5_official" class="box">
+		</div>
+
+		
+	</div>
+
+	<script src="./libs/d3-tip.js"></script>
+
+	<script src="./js/top5_fan_chart.js"></script>
+	<script src="./js/top5_official_chart.js"></script>
 </body>
+
 </html>

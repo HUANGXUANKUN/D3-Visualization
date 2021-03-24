@@ -206,7 +206,7 @@ async function drawHeatMap() {
               ",0)"
           );
 
-        d3.select(".LegText")
+        d3.select(".LegText1")
           .select("text")
           .text(
             colorLText[
@@ -310,7 +310,7 @@ async function drawHeatMap() {
     // legend text
     legends
       .append("g")
-      .attr("class", "LegText")
+      .attr("class", "LegText1")
       .attr("transform", "translate(0,45)")
       .append("text")
       .attr("x", lPatchWidth / 2)

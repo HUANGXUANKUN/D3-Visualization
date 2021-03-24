@@ -1,38 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+<html>
+    <head>
+        <title>PotterVerse</title>
+		<head>
+			<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+			<link rel="stylesheet" href="./css/main.css"></link>
+			<link rel="stylesheet" href="./css/triads.css"></link>
+			<link rel="stylesheet" href="./css/network.css"></link>
+			<title>Harry Potter Network</title>
+		</head>
+		
+    </head>
+    <body id="pottermain">
+        <div class="content">
+			<div class="header">
+				<h1>Top 5 Popular Characters Network</h1>
+			</div>
+			<div class="separator"></div>
+			<div class="description">
+				<p>
+					Explore the relations of top5 popular characters in Harry Potter
+				</p>
+			</div>
+			<div class="separator"></div>
+			<div class="triads"></div>
+			<div class="separator"></div>
+			<div class="network">
+			</div>
+			<div class="bottom-space">
+		    </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.3/lib/alea.min.js"></script>
-    <script src="https://use.fontawesome.com/5b01732ae2.js"></script>
-
-    <script src="js/d3.layout.cloud.js"></script>
-    <script src="js/wordcloud.js"></script>
-  </head>
-
-  <body>
-    <h2 class="lead text-center" id="4">Word Cloud - Canon Titles</h2>
-    <div id="romione-container"></div>
-    <script>
-      WordCloud({
-        container: "#romione-container",
-        data: "../data/romione.json",
-      });
-    </script>
-
-    <hr />
-    <h2 class="lead text-center" id="4">Word Cloud - Fan-Fiction Titles</h2>
-    <div id="wolfstar-container"></div>
-    <script>
-      WordCloud({
-        container: "#wolfstar-container",
-        data: "../data/wolfstar.json",
-      });
-    </script>
-  </body>
+        <script src="./js/libs/jquery-1.11.0.min.js"></script>
+        <script src="./js/libs/d3.v3.min.js"></script>
+        <script src="./js/libs/d3-tip.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/triads.js"></script>
+        <script src="./js/network.js"></script>
+    </body>
 </html>
