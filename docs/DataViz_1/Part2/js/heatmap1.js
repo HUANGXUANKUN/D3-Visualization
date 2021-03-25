@@ -91,7 +91,7 @@ async function drawHeatMap() {
     }
   }
 
-  d3.csv("./data/EarthTempAnomalies.csv", function (rawData) {
+  d3.csv("../data/EarthTempAnomalies.csv", function (rawData) {
     console.log(rawData);
 
     var month_mapper = {
@@ -215,9 +215,9 @@ async function drawHeatMap() {
     tooltip = d3
       .select("body")
       .append("div")
-      .style("width", "400px")
-      .style("height", "50px")
-      .style("background", "#C3B3E5")
+      .style("width", "300px")
+      .style("height", "35px")
+      .style("background", "white")
       .style("opacity", "1")
       .style("position", "absolute")
       .style("visibility", "hidden")
