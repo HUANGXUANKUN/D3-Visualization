@@ -20,59 +20,120 @@ async function drawHeatMap() {
   var lPatchWidth = 200;
   var itemSize = 30,
     cellSize = itemSize - 3,
-    margin = { top: 50, right: 20, bottom: 50, left: 110 };
+    margin = { top: 50, right: 10, bottom: 50, left: 50 };
 
-  var value_csv_title = "NumberOfRainfallDay";
-  
+  var heading = "Global Temperature Anomalies 1980 - 2020";
 
-  width = window.innerWidth * 0.9 - margin.right - margin.left,
-  height = 550 - margin.top - margin.bottom;
+  (width = window.innerWidth * 0.9 - margin.right - margin.left),
+    (height = 550 - margin.top - margin.bottom);
 
   var colorScale;
 
   colorHold = [
-    "#781426",
-    "#C76475",
-    "#EF9FAE",
-    "#ABDB92",
-    "#77B75B",
-    "#2E6E12",
+    "#4A0816",
+    "#6A0E1F",
+    "#881528",
+    "#A51D31",
+    "#C12839",
+    "#CE2D3E",
+    "#D9495C",
+    "#DE576B",
+    "#E77589",
+    "#F5B5C3",
+
+    "#DEF5D9",
+    "#D2F0CC",
+    "#C5EBBF",
+    "#91BF8C",
+    "#85AF7F",
+    "#5E7D59",
+    "#526D4C",
+    "#455C40",
+    "#384B34",
+    "#2B3A27",
   ];
+
   colorLText = [
-    "< -66%",
-    "-66% to -33%",
-    "-33% to 0%",
-    "0% to 33%",
-    "33% to 66%",
-    "> 66%",
+    "< -90%",
+    "-90% to -80%",
+    "-80% to -70%",
+    "-70% to -60%",
+    "-60% to -50%",
+    "-50% to -40%",
+    "-40% to -30%",
+    "-30% to -20%",
+    "-20% to -10%",
+    "-10% to 0%",
+
+    "0% to 10%",
+    "10% to 20%",
+    "20% to 30%",
+    "30% to 40%",
+    "40% to 50%",
+    "50% to 60%",
+    "60% to 70%",
+    "70% to 80%",
+    "80% to 90%",
+    "> 90%",
   ];
+
+  var color_domain_array = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   function bandClassifier(val, multiplier) {
     if (val >= 0) {
-      return Math.floor((val * multiplier) / (0.33 * multiplier)) + 1 > 3
-        ? 3
-        : Math.floor((val * multiplier) / (0.33 * multiplier)) + 1;
+      return Math.floor((val * multiplier) / (0.1 * multiplier)) + 1 > 10
+        ? 10
+        : Math.floor((val * multiplier) / (0.1  * multiplier)) + 1;
     } else {
-      return Math.floor((val * multiplier) / (0.33 * multiplier)) < -3
-        ? -3
-        : Math.floor((val * multiplier) / (0.33 * multiplier));
+      return Math.floor((val * multiplier) / (0.1 * multiplier)) < -10
+        ? -10
+        : Math.floor((val * multiplier) / (0.1  * multiplier));
     }
   }
 
-  d3.csv("./data/data.csv", function (rawData) {
-    const dateParser = d3.timeParse("%Y-%m");
-    console.log((height + margin.bottom - 35 - 20))
-    var data;
-    data = rawData.map(function (item) {
-      var newItem = {};
-      var date = dateParser(item.Date);
-      newItem.date = date;
-      newItem.year = date.getYear() + 1900;
-      newItem.month = date.toLocaleString('default', { month: 'long' });
-      newItem.value = item[value_csv_title];
-      return newItem;
+  d3.csv("../data/EarthTempAnomalies.csv", function (rawData) {
+    console.log(rawData);
+
+    var month_mapper = {
+      1: "Jan",
+      2: "Feb",
+      3: "Mar",
+      4: "Apr",
+      5: "May",
+      6: "Jun",
+      7: "Jul",
+      8: "Aug",
+      9: "Sep",
+      10: "Oct",
+      11: "Nov",
+      12: "Dec",
+    };
+    var data = [];
+    rawData.forEach((item) => {
+      // filter by Hemisphere and year range
+      if (
+        item.Hemisphere === "Global" &&
+        item.Year >= 1980 &&
+        item.Year <= 2020
+      ) {
+        console.log(item);
+        var year = item.Year;
+        for (let i = 1; i <= 12; i++) {
+          var month_short = month_mapper[i];
+          let date_str = month_short + " " + year;
+          var d = {
+            date: date_str,
+            year: year,
+            month: month_short,
+            value: item[month_short],
+          };
+          // console.log(d);
+          data.push(d);
+        }
+      }
     });
 
+    console.log("printing processed data");
     console.log(data);
 
     invertcolors = 0;
@@ -95,9 +156,9 @@ async function drawHeatMap() {
           })
         )
         .values();
-        
-    console.log(x_elements)
-    console.log(y_elements)
+
+    console.log(x_elements);
+    console.log(y_elements);
 
     var xScale = d3
       .scaleBand()
@@ -139,13 +200,10 @@ async function drawHeatMap() {
       d.perChange = (d.value - mean) / mean;
     });
 
-    colorScale = d3
-      .scaleOrdinal()
-      .domain([-3, -2, -1, 1, 2, 3])
-      .range(colorHold);
+    colorScale = d3.scaleOrdinal().domain(color_domain_array).range(colorHold);
 
     var rootsvg = d3
-      .select("#heatmap2")
+      .select("#heatmap1")
       .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom);
@@ -157,9 +215,9 @@ async function drawHeatMap() {
     tooltip = d3
       .select("body")
       .append("div")
-      .style("width", "200px")
-      .style("height", "40px")
-      .style("background", "#C3B3E5")
+      .style("width", "300px")
+      .style("height", "35px")
+      .style("background", "white")
       .style("opacity", "1")
       .style("position", "absolute")
       .style("visibility", "hidden")
@@ -192,7 +250,7 @@ async function drawHeatMap() {
         console.log(d);
         //d3.select(this).attr("fill","#655091");
         d3.select(this).style("stroke", "orange").style("stroke-width", "3px");
-        d3.select(".trianglepointer2")
+        d3.select(".trianglepointer1")
           .transition()
           .delay(100)
           .attr(
@@ -206,7 +264,7 @@ async function drawHeatMap() {
               ",0)"
           );
 
-        d3.select(".LegText2")
+        d3.select(".LegText1")
           .select("text")
           .text(
             colorLText[
@@ -215,7 +273,6 @@ async function drawHeatMap() {
           );
       })
       .on("mouseout", function () {
-        //d3.select(this).attr('fill', function(d) { return colorScale(window.bandClassifier(d.perChange,100));});
         d3.select(this).style("stroke", "none");
         tooltip.style("visibility", "hidden");
       })
@@ -229,7 +286,14 @@ async function drawHeatMap() {
         tooltip
           .select("div")
           .html(
-            "<strong>" + d.month + " " + d.year  + "</strong><br/> " + " Rainy Days: " + (+d.value) + " days"
+            "<strong>" +
+              d.month +
+              " " +
+              d.year +
+              "</strong><br/> " +
+              " Global Temperature Change: " +
+              (+d.value).toFixed(2) +
+              " degree"
           );
       });
 
@@ -258,7 +322,6 @@ async function drawHeatMap() {
       });
 
     // Legends section
-    
 
     legends = svg
       .append("g")
@@ -272,8 +335,6 @@ async function drawHeatMap() {
           ")"
       );
 
-      
-
     // Legend traingle pointer generator
     var symbolGenerator = d3.symbol().type(d3.symbolTriangle).size(64);
 
@@ -281,15 +342,17 @@ async function drawHeatMap() {
       .append("g")
       .attr("transform", "rotate(180)")
       .append("g")
-      .attr("class", "trianglepointer2")
+      .attr("class", "trianglepointer1")
       .attr(
         "transform",
         "translate(" + -lPatchWidth / colorScale.range().length / 2 + ")"
       )
       .append("path")
       .attr("d", symbolGenerator());
-      
+
     //Legend Rectangels
+
+    colorScale
     legends
       .append("g")
       .attr("class", "LegRect")
@@ -310,7 +373,7 @@ async function drawHeatMap() {
     // legend text
     legends
       .append("g")
-      .attr("class", "LegText2")
+      .attr("class", "LegText1")
       .attr("transform", "translate(0,45)")
       .append("text")
       .attr("x", lPatchWidth / 2)
@@ -328,7 +391,7 @@ async function drawHeatMap() {
       .attr("font-size", "22px")
       .attr("font-family", "Segoe UI bold")
       .style("text-anchor", "middle")
-      .text("Singapore Monthly Rain Days 1982 - 2021");
+      .text(heading);
   });
 }
 drawHeatMap();
