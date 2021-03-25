@@ -1,0 +1,70 @@
+.content {
+  font-family: times;
+}
+
+.header {
+  margin-bottom: -30px;
+}
+
+.header h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.network .ally-link {
+    stroke: #5bf613;
+    stroke-width: 2;
+}
+
+.network .enemy-link {
+    stroke: #e03105;/*#50BD91;*/
+    stroke-width: 2;
+}
+
+.network .node {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.network .node:hover {
+    cursor: pointer;
+}
+
+text.node-text {
+    fill: #fff;
+    font-size: 12px;
+}
+
+.bio-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(8, 0, 0);
+    height: 80px;
+    width: 160px;
+    pointer-events: none;
+}
+
+.bio-tip h1 {
+    margin-top: 2px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.bio-tip p {
+    margin-top: -5px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
