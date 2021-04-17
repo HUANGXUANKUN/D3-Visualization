@@ -18,7 +18,7 @@
         .attr("fill", "#000")
         .style("font", "20px times")
         .style("text-anchor", "middle")
-        .text("Russia - Birth & Death Rate Per 1000 Population");
+        .text("Russia - Birth & Death Rate(%) Per 1000 Population");
 
     var parseDate = d3.timeParse("%Y");
 
@@ -84,7 +84,7 @@
             .attr("dy", "1em")
             .attr("fill", "#000")
             .style("font", "14px times")
-            .text("Birth/Death Rate Per 1000 Population");
+            .text("Birth/Death Rate(%) Per 1000 Population");
 
         var source = g.selectAll(".area")
             .data(sources)
@@ -124,16 +124,35 @@
         console.log(d)
         return d;
     }
-
     // Handmade legend
+    g.append('rect')
+        .attr('x', width - 160)
+        .attr('y', -10)
+        .attr('width', 20)
+        .attr('height', 2)
+        .attr('stroke', 'c7950a')
+        .attr('fill', '#c7950a');
+
+    g.append("text").attr("x", width - 130).attr("y", -8).text("Birth Rate ").style("font-size", "12px").attr("alignment-baseline", "middle")
+
+    g.append('rect')
+        .attr('x', width - 160)
+        .attr('y', 20)
+        .attr('width', 20)
+        .attr('height', 2)
+        .attr('stroke', 'F0312F')
+        .attr('fill', '#F0312F');
+
+    g.append("text").attr("x", width - 130).attr("y", 22).text("Death Rate").style("font-size", "12px").attr("alignment-baseline", "middle")
+
     g.append("circle").attr("cx", width - 150).attr("cy", 50).attr("r", 10).style("fill", "#FBE39E")
         .attr('stroke', '#c7950a')
         .attr('stroke-width', 1.5)
-    g.append("circle").attr("cx", width - 150).attr("cy", 80).attr("r", 10).style("fill", "#FE8C3C")
-    .attr('stroke', '#F0312F')
+    g.append("circle").attr("cx", width - 150).attr("cy", 80).attr("r", 10).style("fill", "red")
+        .attr('stroke', '#F0312F')
         .attr('stroke-width', 1.5)
-    g.append("text").attr("x", width - 130).attr("y", 52).text("Birth Rate").style("font-size", "15px").attr("alignment-baseline", "middle")
-    g.append("text").attr("x", width - 130).attr("y", 82).text("Death Rate").style("font-size", "15px").attr("alignment-baseline", "middle")
+    g.append("text").attr("x", width - 130).attr("y", 52).text("Birth Rate > Death Rate").style("font-size", "12px").attr("alignment-baseline", "middle")
+    g.append("text").attr("x", width - 130).attr("y", 82).text("Death Rate > Birth Rate").style("font-size", "12px").attr("alignment-baseline", "middle")
 
 </script>
 </body>
